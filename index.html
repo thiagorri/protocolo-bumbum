@@ -773,7 +773,7 @@ src="https://www.facebook.com/tr?id=927831214659921&ev=PageView&noscript=1"
 var checkoutJaDisparado = false;
 function trackCheckoutOnce(){
   if(!checkoutJaDisparado && typeof fbq === 'function'){
-    fbq('track', 'InitiateCheckout');
+    fbq('track', 'InitiateCheckout', {value: 47.90, currency: 'BRL'});
     checkoutJaDisparado = true;
   }
 }
